@@ -10,3 +10,9 @@
   -----------
   
   Resume Mikalay Asiyeuski
+
+
+  Link to view?
+  -----------
+
+  https://nikosievski.github.io/my-resume/
