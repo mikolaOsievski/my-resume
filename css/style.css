@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Heebo', sans-serif;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+.main {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px dotted #c62c27;
+}
+.hello,
+.contacts,
+.summary,
+.work-experience,
+.education {
+  margin-bottom: 40px;
+}
+.reason-for-job {
+  margin-bottom: 20px;
+}
+.title-section {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.title-section__text {
+  box-sizing: border-box;
+  border-bottom: 2px solid #000;
+}
+.number-section {
+  display: inline-block;
+  background-color: #c62c27;
+  color: #fff;
+  padding: 15px 5px 5px 5px;
+  margin-right: 10px;
+}
+.row {
+  display: flex;
+}
+.row > .col:first-child {
+  flex: 1;
+}
+.row > .col:last-child {
+  flex: 2;
+}
+.position {
+  font-weight: bold;
+  color: #636264;
+}
+.work-experience__item,
+.education__item {
+  margin-bottom: 20px;
+}
+.work-name,
+.education-name {
+  margin-bottom: 10px;
+}
+.responsibilities-title,
+.work-description,
+.education-description,
+.reason-for-job__items {
+  color: #636264;
+}
+.work-description_list li::before,
+.reason-for-job__items li::before {
+  content: '- ';
+}
+.hello {
+  display: flex;
+  flex-direction: column;
+}
+.hello-wrapper {
+  align-self: flex-start;
+  background-color: #c62c27;
+  padding: 72px 5px 5px 5px;
+  margin-bottom: 40px;
+}
+.hello__title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.hello__text {
+  font-size: 36px;
+  font-weight: bold;
+}
+.hello__img {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  border: 2px #c62c27 solid;
+  border-radius: 50%;
+}
+.text-fix {
+  display: inline-block;
+  position: relative;
+}
+.word-fix {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 28px;
+  color: #fff;
+  background-color: #C62B27;
+  position: absolute;
+  right: -58px;
+  top: 20px;
+}
+.contacts__item > span {
+  color: #636264;
+}
+.contacts__item > a {
+  color: #c62c27;
+}
+.contacts__item > a:hover {
+  color: #ca5b59;
+}
+.summary__text,
+.reason-for-job__text {
+  color: #636264;
+}
