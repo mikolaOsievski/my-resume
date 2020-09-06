@@ -111,7 +111,7 @@ ol, ul {
   color: #fff;
   background-color: #C62B27;
   position: absolute;
-  right: -58px;
+  right: -56px;
   top: 20px;
 }
 .contacts__item > span {
@@ -126,4 +126,62 @@ ol, ul {
 .summary__text,
 .reason-for-job__text {
   color: #636264;
+}
+@media screen and (max-width: 960px) {
+  .main {
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 912px) {
+  .hello {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 832px) {
+  .main {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .row {
+    flex-direction: column;
+  }
+  .row > .col:first-child {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .main {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  /* .hello__text {
+    font-size: 30px;
+  } */
+}
+@media screen and (max-width: 380px) {
+  .main {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hello__text {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 329px) {
+  .main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
