@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 .visually-hidden {
@@ -16,30 +17,64 @@ ol, ul {
   height: 1px;
   margin: -1px;
 }
+a:focus,
+button:focus,
+a:hover button:hover {
+  outline: 2px solid #c62c27;
+}
 .main {
   width: 720px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 2px dotted #c62c27;
 }
 .hello,
 .contacts,
 .summary,
 .work-experience,
 .education {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .reason-for-job {
   margin-bottom: 20px;
 }
 .title-section {
+  display: flex;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+button {
+  display: flex;
+  width: 100%;
+  font: inherit;
+  text-transform: inherit;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 .title-section__text {
+  display: flex;
+  flex-grow: 1;
+  align-self: flex-end;
+  position: relative;
+  padding-right: 32px;
+  padding-bottom: 3px;
+  text-align: left;
   box-sizing: border-box;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid lightgrey;
+}
+.title-section__text:after {
+  content: "\002B";
+  position: absolute;
+  bottom: -2px;
+  right: 3px;
+  font-size: 32px;
+  color: #c62b27;
+  transition: all 0.5s ease-out;
+}
+.active .title-section__text:after {
+  transform: rotate(-225deg);
+  transition: all 0.5s ease-out;
 }
 .number-section {
   display: inline-block;
@@ -47,6 +82,22 @@ ol, ul {
   color: #fff;
   padding: 15px 5px 5px 5px;
   margin-right: 10px;
+}
+
+button:hover > span.title-section__text {
+  border-color: #ca5b59;
+}
+button:focus > span.title-section__text {
+  border-bottom-color: #ffffff;
+}
+.content-wrapper {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.6s ease-out;
+}
+.active .content-wrapper {
+  max-height: 1000px;
+  transition: all 0.6s ease-out;
 }
 .row {
   display: flex;
@@ -77,7 +128,7 @@ ol, ul {
 }
 .work-description_list li::before,
 .reason-for-job__items li::before {
-  content: '- ';
+  content: "- ";
 }
 .hello {
   display: flex;
@@ -87,7 +138,7 @@ ol, ul {
   align-self: flex-start;
   background-color: #c62c27;
   padding: 72px 5px 5px 5px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .hello__title {
   color: #fff;
@@ -115,7 +166,7 @@ ol, ul {
   padding: 5px 10px;
   font-size: 28px;
   color: #fff;
-  background-color: #C62B27;
+  background-color: #c62b27;
   position: absolute;
   right: -56px;
   top: 20px;
@@ -132,6 +183,9 @@ ol, ul {
 .summary__text,
 .reason-for-job__text {
   color: #636264;
+}
+.summary__text:nth-child(n-1) {
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 960px) {
   .main {
@@ -170,9 +224,6 @@ ol, ul {
     margin-left: 40px;
     margin-right: 40px;
   }
-  /* .hello__text {
-    font-size: 30px;
-  } */
 }
 @media screen and (max-width: 380px) {
   .main {
