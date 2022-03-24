@@ -15,4 +15,4 @@
   Link to view?
   -----------
 
-  https://nikosievski.github.io/my-resume/
+  https://mikolaosievski.github.io/my-resume/
